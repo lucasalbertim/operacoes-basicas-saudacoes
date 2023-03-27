@@ -13,7 +13,7 @@ public class Principal {
 		int escolha;
 		
 		System.out.println("Oque deseja fazer? ");
-		System.out.print("1-Calculadora \n2-Comprimentar \n3-Emprestimo ");
+		System.out.print("1-Calculadora \n2-Comprimentar ");
 		escolha = scan.nextInt();
 		
 		switch(escolha) {
@@ -27,6 +27,9 @@ public class Principal {
 			int horaConvertida = Integer.parseInt(horaAtual);
 			//System.out.println(horaConvertida);
 			Saudacoes.saudacao(horaConvertida);
+			break;
+		default:
+			System.out.println("Operacão invalida!, digite um numero valido!");
 			break;
 		}
 		
